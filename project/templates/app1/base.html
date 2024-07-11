@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/app1/style.css' %}">
+</head>
+
+<body>
+
+    <div id="nav">
+        <ul>
+            <li>
+                <!-- <Link to="/regler"> -->
+                <img src="https://next.minimog.co/cdn/shop/files/logo_f5707eeb-188f-4303-bbec-08f2c6e2a65d.png?v=1631802647&width=500"
+                    alt="" /></Link>
+            </li>
+        </ul>
+        <a href="#">Home</a>
+        <a href="#">Pages</a>
+        <a href="#">Shop </a>
+        <a href="#">Product</a>
+        <a href="#"> Foxkit</a>
+    </div>
+        {% block content %}
+
+        {% endblock %}
+
+    <div id="footer">
+        <h1>Don't miss a thing</h1>
+        <p>Sign up for our newsletter.</p>
+        <input type="email" placeholder="Enter your email" />
+    </div>
+    <section id="foot">
+        <ul>
+            <div>About</div>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>FAQs</li>
+            <li>Blog</li>
+        </ul>
+        <ul>
+            <div>Information</div>
+            <li>My account</li>
+            <li> Cart</li>
+            <li> Wishlist</li>
+            <li>Product Comp</li>
+        </ul>
+    </section>  
+</body>
+
+</html>
